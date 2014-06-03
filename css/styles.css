@@ -1,6 +1,6 @@
 body{
   font: 300 1em/1.5em Sans-Serif;
-  background: #D82626;
+  background: #B22222;
   color: #fff;
 }
 
@@ -57,7 +57,7 @@ h3{
 }
 
 .nav li a:hover, .nav li.active a{
-  color: #D82626;
+  color: #B22222;
   background: #fff;
 }
 
@@ -159,7 +159,7 @@ textarea{
 
 .btn:hover{
   background: #fff;
-  color: #D82626;
+  color: #B22222;
 }
 
 .content{
