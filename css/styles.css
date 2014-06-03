@@ -1,14 +1,27 @@
 body{
-  font: 300 1em/1.5em 'Helvetica', Arial, sans-serif;
-  background: #fff;
-  color: #666;
+  font: 300 1em/1.5em Sans-Serif;
+  background: #D82626;
+  color: #fff;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 header{
   margin: 0;
   padding: 0;
-  color: #f00;
+  color: #fff;
   text-align: center;
+}
+
+.logo_sec, .nav{
+  display: inline-block;
 }
 
 .center{
@@ -20,12 +33,14 @@ h1{
 }
 
 h3{
-  color: #333;
-  font-family: Georgia, "Times New Roman";
+  font-size: 1.4em;
+  border-bottom: 1px solid #f00;
+  padding-bottom: 6px;
 }
 
 .nav{
   padding: 15px 5px;
+  margin-top: 22px;
 }
 
 .nav li{
@@ -35,13 +50,15 @@ h3{
 
 .nav li a{
   text-decoration: none;
-  padding: 4px 10px;
-  color: #666;
+  padding: 10px 22px;
+  color: #fff;
   font-size: 0.8em;
+  border: 1px solid #fff;
 }
 
 .nav li a:hover, .nav li.active a{
-  color: #000;
+  color: #D82626;
+  background: #fff;
 }
 
 .tac{
@@ -57,19 +74,21 @@ h3{
   font-weight: 300;
   color: #f00;
   line-height: 3em;
-  color: #777;
+  color: #fff;
   margin-bottom: 20px;
 }
+
 .intro strong{
-  color: #f00;
+  font-size: 1.5em;
+  padding: 2px 8px;
 }
 
 .awesome{
-  color: #333;
+  color: #fff;
   display: inline-block;
   margin: 10px 0 15px 0;
   font-family: Georgia, "Times New Roman";
-  }
+}
 
 .awesome span{
   display: inline-block;
@@ -106,10 +125,20 @@ h3{
 }
 
 input[type="text"], input[type="email"], textarea{
-  border: 1px solid #666;
+  border: 1px solid #fff;
   width: 90%;
   padding: 4px;
   margin-bottom: 10px;
+  background: #eee;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+  background: #fff;
 }
 
 textarea{
@@ -119,22 +148,18 @@ textarea{
 .btn{
   padding: 4px 10px;
   background: none;
-  border: 1px solid #f00;
-  color: #f00;
+  border: 1px solid #fff;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .btn:hover{
-  background: #f00;
-  color: #fff;
-}
-
-a{
-  color: #f00;
-  text-decoration: none;
-}
-
-a:hover{
-  text-decoration: underline;
+  background: #fff;
+  color: #D82626;
 }
 
 .content{
