@@ -88,11 +88,12 @@ h3{
 
 
 input[type="text"], input[type="email"], textarea{
-  border: 1px solid #fff;
+  border: 1px solid #EF9176;
   width: 90%;
   padding: 4px;
   margin-bottom: 10px;
-  background: #eee;
+  background: #EF9176;
+  color: black;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
