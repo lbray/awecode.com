@@ -1,7 +1,12 @@
 body{
-  font: 300 1em/1.5em Sans-Serif;
-  background: #B22222;
+  font: Sans-Serif;
+  background: #C93929;
+  /*
+  #C93929
+  #B22222
+  */
   color: #fff;
+  line-height: 1.5em;
 }
 
 a{
@@ -16,7 +21,12 @@ a:hover{
 header{
   margin: 0;
   padding: 0;
+  color: #fff;
   text-align: center;
+}
+
+header a:hover{
+text-decoration: none;
 }
 
 .logo_sec, .nav{
@@ -27,32 +37,34 @@ header{
   max-width: 90em;
 }
 
-h1{
-  line-height: 2em;
-  font-size: 2.5em;
+h1 {
+    line-height: 0.9em;
+    font-size: 3em;
 }
+
 
 h3{
   font-size: 1.4em;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
   padding-bottom: 6px;
 }
 
 .nav{
   padding: 15px 5px;
-  margin-top: 35px;
+  margin-top: 22px;
 }
 
 .nav li{
+  font: 300 1em/1.5em Sans-Serif;
   display: inline-block;
   margin: 4px 10px;
 }
 
 .nav li a{
   text-decoration: none;
-  padding: 12px 26px;
+  padding: 10px 22px;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.8em;
   border: 1px solid #fff;
 }
 
@@ -70,59 +82,10 @@ h3{
 }
 
 .intro{
-  font: 300 1em/1.5em Georgia, "Times New Roman";
-  font-weight: 300;
-  color: #ffffff;
   line-height: 3em;
-  color: #fff;
-  margin-bottom: 20px;
+  font-size: 1.8em;
 }
 
-.intro strong{
-  font-size: 1.5em;
-  padding: 2px 8px;
-}
-
-.awesome{
-  color: #fff;
-  display: inline-block;
-  margin: 10px 0 15px 0;
-  font-family: Georgia, "Times New Roman";
-}
-
-.awesome span{
-  display: inline-block;
-  margin: 0px;
-  font-size: 2em;
-  padding: 30px;
-  border: 1px solid #ffffff;
-  margin-right: -5px;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.awesome span:last-child{
-  margin-right: 0;
-}
-
-.awesome span:nth-child(odd){
-  -webkit-transform: skewY(10deg);
-  -moz-transform: skewY(10deg);
-  -o-transform: skewY(10deg);
-  -ms-transform: skewY(10deg);
-  transform: skewY(10deg);
-}
-
-.awesome span:nth-child(even){
-  -webkit-transform: skewY(-10deg);
-  -moz-transform: skewY(-10deg);
-  -o-transform: skewY(-10deg);
-  -ms-transform: skewY(-10deg);
-  transform: skewY(-10deg);
-}
 
 input[type="text"], input[type="email"], textarea{
   border: 1px solid #fff;
@@ -164,6 +127,10 @@ textarea{
 
 .content{
   font-size: 0.9em;
+}
+
+header img{
+margin-top: -0.2em;
 }
 
 /* ======================================= 
