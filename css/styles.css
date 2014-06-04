@@ -1,5 +1,5 @@
 body{
-  font: Sans-Serif;
+  font-family: sans-serif;
   background: #C93929;
   /*
   #C93929
@@ -99,6 +99,14 @@ input[type="text"], input[type="email"], textarea{
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+textarea::-webkit-input-placeholder{
+    color:#7D4C3E;
+}
+
+input::-webkit-input-placeholder{
+    color:#7D4C3E;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
