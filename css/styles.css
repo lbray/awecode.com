@@ -22,8 +22,8 @@ html,body,.wrapper{
 }
 .header h1 a span{
   vertical-align: top;
-line-height: 1.4em;
-font-size: 1.4em;
+  line-height: 1.4em;
+  font-size: 1.4em;
 }
 .section{
   width: 32.33%;
