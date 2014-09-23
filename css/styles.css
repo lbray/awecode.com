@@ -82,3 +82,6 @@ font-size: 1.4em;
   width: 99%;
   clear: both;
 }
+.panel{
+    display: none;
+}
