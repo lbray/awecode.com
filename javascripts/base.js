@@ -11,23 +11,32 @@ $(function(){
         //hide the section name
         $(section.find('h1')[0]).toggle();
         //show the section content/panel
-        $(section.find('.panel')[0]).toggle();
+        $(section.find('.panel')[0]).fadeIn(1300);
         //remove section click listener
         section.off('click');
         //add escape listener
+        $(document).off('keyup')
         $(document).on('keyup', esc_listener);
         History.pushState({state:title}, 'Awecode | ' +title, '?'+title.toLowerCase());
     }
 
     var section_click_listener= function(){
+
         var self = this;
         $('.section').not(self).removeClass('active').addClass('inactive');
         var offset = $(self).offset();
-        $(self).addClass('active').css({top: 0, left: 0})
+
+
         setTimeout(function(){
-          $('.section').not(self).fadeOut(200);
-          open_panel($(self).attr('id'));
-      },500)
+          $('.section').not(self).fadeOut(200, function(){
+            $(self).addClass('active').css({top: 0, left: 0});
+        });
+      },500);
+        // $(self).addClass('active').css({top: 0, left: 0});
+
+        setTimeout(function(){
+            open_panel($(self).attr('id'));
+        },1600);
 
     };
 
@@ -67,10 +76,12 @@ $(function(){
       },500);
         //remove escape listener
         $(document).off('keyup');
+
         if (back){
             History.back();
         }
         //add section click handlers
+        $('.section').off('click');
         $('.section').on('click', section_click_listener);
     }
 
@@ -82,6 +93,7 @@ $(function(){
         });
 
         absolutify();
+
         //add section click handlers
         $('.section').on('click', section_click_listener);
 
