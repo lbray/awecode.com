@@ -179,7 +179,7 @@ margin-top: -0.2em;
     font-weight: 200;
 }
 
-.half-block{
+.half{
     width: 50%;
     float: left;
 }
@@ -212,8 +212,8 @@ hr{
 .button span {
     display: inline-block;
     padding: 20px 30px;
-    background-color: #ec528d;
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+    background-color: #C93929;
+    background-image: gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
     background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
     background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
     background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
@@ -226,7 +226,7 @@ hr{
 }
 
 .button:hover span {
-    background-color: #ec6a9c;
+    background-color: #8D361D;
     text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
 }
 
@@ -236,4 +236,12 @@ hr{
 
 .button:active span {
     transform: translate(0, 4px);
+}
+
+#contact{
+    display: none;
+}
+
+#works{
+    display:none;
 }
