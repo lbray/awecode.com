@@ -1,16 +1,16 @@
 body{
   font-family: sans-serif;
-  background: #C93929;
+  /*background: #C93929;*/
   /*
   #C93929
   #B22222
   */
-  color: #fff;
+  /*color: #fff;*/
   line-height: 1.5em;
 }
 
 a{
-  color: #fff;
+  color: #C93929;
   text-decoration: none;
 }
 
@@ -21,12 +21,17 @@ a:hover{
 header{
   margin: 0;
   padding: 0;
-  color: #fff;
+  /*color: #fff;*/
+  color: #C93929;
   text-align: center;
 }
 
 header a:hover{
-text-decoration: none;
+    text-decoration: none;
+}
+
+header a{
+
 }
 
 .logo_sec, .nav{
@@ -45,8 +50,9 @@ h1 {
 
 h3{
   font-size: 1.4em;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 6px;
+  border-bottom: 1px solid #C93929;
+  display: inline-block;
+  padding: 0 0.2em;
 }
 
 .nav{
@@ -55,7 +61,7 @@ h3{
 }
 
 .nav li{
-  font: 300 1em/1.5em Sans-Serif;
+  font: 150 1em/1.5em Sans-Serif;
   display: inline-block;
   margin: 4px 10px;
 }
@@ -63,9 +69,10 @@ h3{
 .nav li a{
   text-decoration: none;
   padding: 10px 22px;
-  color: #fff;
-  font-size: 1.8em;
-  border: 1px solid #fff;
+  /*color: #fff;*/
+  /*font-size: 1.8em;*/
+  /*border: 1px solid #C93929;*/
+  color: black;
 }
 
 .nav li a:hover, .nav li.active a{
@@ -92,25 +99,8 @@ input[type="text"], input[type="email"], textarea{
   width: 90%;
   padding: 4px;
   margin-bottom: 10px;
-  background: #EF9176;
-  color: black;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
+  /*background: #EF9176;*/
   transition: all 0.3s linear;
-}
-
-textarea::-webkit-input-placeholder{
-    color:#7D4C3E;
-}
-
-input::-webkit-input-placeholder{
-    color:#7D4C3E;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
-  background: #fff;
 }
 
 textarea{
@@ -118,45 +108,82 @@ textarea{
 }
 
 .btn{
-  padding: 4px 10px;
-  background: none;
-  border: 1px solid #fff;
-  color: #fff;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+    color: #000000;
+    padding: 4px 10px;
+    border: 1px solid #C93929;
+    transition: all 0.3s linear;
 }
 
 .btn:hover{
-  background: #fff;
   color: #B22222;
 }
 
-.content{
+/* Outline Outward */
+nav li a {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+nav li a:before {
+  content: '';
+  position: absolute;
+  border: #C93929 solid 1px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
+}
+nav li a:hover:before, nav li a:focus:before, nav li a:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}
+
+/*.content{
   font-size: 0.9em;
-}
+  }*/
 
-header img{
+/*header img{
 margin-top: -0.2em;
-}
+}*/
 
-/* ======================================= 
+/* =======================================
    media queries
    ======================================= */
 
 
-/* tablet size */   
-@media screen and (max-width: 48em ) {
-  
-  /* css */
-  
-}   
-    
-/* smartphone size */
-@media screen and (max-width: 36.5em ) {
-  
-  /* css */
+   /* tablet size */
+   @media screen and (max-width: 48em ) {
 
+      /* css */
+
+  }
+
+  /* smartphone size */
+  @media screen and (max-width: 36.5em ) {
+
+      /* css */
+
+  }
+
+
+  #intro{
+    text-align: center;
+    padding:1em;
+    line-height: 1.5em;
+    font-size: 2.2em;
+    font-weight: 200;
+}
+
+.half-block{
+    width: 50%;
+    float: left;
+}
+
+header h1{
+    margin: 0;
 }
