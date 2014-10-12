@@ -6,9 +6,9 @@ html {
 }
 
 body, #wrapper{
-   height: 100%;
-   margin: 0;
-   padding: 0;
+ height: 100%;
+ margin: 0;
+ padding: 0;
 }
 
 a{
@@ -57,47 +57,47 @@ a:hover{
 
 
 .tab-holder{width: auto;
-text-align: right;
-padding: 20px;
+    text-align: right;
+    padding: 20px;
 }
 .tab-holder .tab{
     margin: 0 0 0 10px;
-text-transform: uppercase;
-padding: 5px 11px;
-border-radius:4px;}
+    text-transform: uppercase;
+    padding: 5px 11px;
+    border-radius:4px;}
 
-.tab.active{background:#e54d36;
-border-bottom: 4px solid #c0392b;
+    .tab.active{background:#e54d36;
+        border-bottom: 4px solid #c0392b;
 
-}
+    }
 
-.tab-container{padding:30px;}
+    .tab-container{padding:30px;}
 
-h1{font-weight: normal}
-li{list-style:none;}
-ul{padding:0; margin:0;}
+    h1{font-weight: normal}
+    li{list-style:none;}
+    ul{padding:0; margin:0;}
 
-.contact{width:100%;}
-.contact li{margin:20px 0;}
-.contact label{display:block;}
-.contact input{border:none; box-shadow:none; padding:7px 10px; width:100%;}
-.contact textarea{width: 100%;
-padding: 10px;
-resize: none;height:100px;
-}
+    .contact{width:100%;}
+    .contact li{margin:20px 0;}
+    .contact label{display:block;}
+    .contact input{border:none; box-shadow:none; padding:7px 10px; width:100%;}
+    .contact textarea{width: 100%;
+        padding: 10px;
+        resize: none;height:100px;
+    }
 
-.btn{background: #e74c3c;
-color: #FFF;
-padding: 10px 20px !important;
-border-radius: 4px;
-letter-spacing: 1px;
-border-bottom: 4px solid #c0392b;
-text-transform:uppercase;
-width:auto !important;
-}
-.contact .btn{background:#c0392b; }
-.tab-detail-holder{display: flex;
-    /*justify-content: center;*/
-    align-items: center;
-width:50%;
-height:100%;}
+    .btn{background: #e74c3c;
+        color: #FFF;
+        padding: 10px 20px !important;
+        border-radius: 4px;
+        letter-spacing: 1px;
+        border-bottom: 4px solid #c0392b;
+        text-transform:uppercase;
+        width:auto !important;
+    }
+    .contact .btn{background:#c0392b; }
+    .tab-detail-holder{display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+        width:50%;
+        height:100%;}
