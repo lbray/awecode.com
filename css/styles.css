@@ -20,28 +20,23 @@ a:hover{
   /*text-decoration: underline;*/
 }
 
-#left{
-    width: 50%;
-    /*display: inline-block;*/
+#brand-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    float: left;
     height: 100%;
     text-align: center;
 
 
 }
 
-#left h1{
+#brand-wrapper h1{
     font-weight: 100;
     text-transform:uppercase;
     color: black;
 }
 
 #right{
-    width: 50%;
-    float: right;
     display: inline-block;
     background-color: #333;
     color: #e54d36;
@@ -51,7 +46,7 @@ a:hover{
 }
 
 #intro{
-
+    display: block;
     margin-top: 1.2em;
 }
 
