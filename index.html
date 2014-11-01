@@ -14,6 +14,14 @@
 
     <!-- <link rel="stylesheet" href="css/fitgrd.pack.css"> -->
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.smint.js"></script>
+    <script>
+        $('nav#menu').smint({
+            'scrollSpeed': 1000
+        });
+    </script>
+
 
 </head>
 <body>
@@ -48,61 +56,114 @@
         </ul>
     </nav>
 
+    <div class="subMenu smint" style="position: relative; top: 0px; left: 0px;">
+	 	<div class="inner">
+	 		<a href="http://www.outyear.co.uk/smint/demo/#sTop" class="subNavBtn active" id="sTop">Home</a>
+	 		<a href="http://www.outyear.co.uk/smint/demo/#s1" class="subNavBtn" id="s1">Section 1</a>
+			<a href="http://www.outyear.co.uk/smint/demo/#s2" class="subNavBtn" id="s2">Section 2</a>
+			<a href="http://www.outyear.co.uk/smint/demo/#s3" class="subNavBtn" id="s3">Section 3</a>
+			<a href="http://www.outyear.co.uk/smint/demo/#s4" class="subNavBtn" id="s4">Section 4</a>
+			<a href="http://www.outyear.co.uk/smint/demo/#s5" class="subNavBtn" id="s5">Section 5</a>
+			<a href="https://twitter.com/rabmyself" class="subNavBtn extLink end">External Link</a>
+		</div>
+	</div>
 
+    <div class="section s1">
+		<div class="inner ">
+			<h1>Section 1</h1>
+		</div>
+	</div>
+
+	<div class="section s2">
+		<div class="inner">
+			<h1>Section 2</h1>
+			<p><a href="http://www.outyear.co.uk/smint/demo/#s4" class="intLink">Internal Link: Jump to Section 4</a></p>
+			<p><a href="http://www.outyear.co.uk/smint/demo/#sTop" class="intLink">Internal Link: Back to Top</a></p>
+		</div>
+	</div>
+
+
+
+	<div class="section s3">
+		<div class="inner">
+			<h1>Section 3</h1>
+		</div>
+	</div>
+
+	<div class="section s4">
+		<div class="inner">
+			<h1>Section 4</h1>
+		</div>
+	</div>
+
+	<div class="section s5">
+		<div class="inner">
+			<h1>Section 5</h1>
+		</div>
+	</div>
+
+
+    <div class="section" id="section-works">
+
+    </div>
+
+    <div class="section" id="section-testimonials">
+        Hey
+    </div>
 
 
     <!--<div id="right">-->
-        <!--<div class="right-top">-->
-            <!--<div class='tab-holder'>-->
-                <!--<span class='tab'>Works</span>-->
-                <!--<span class='tab active'>Contact</span>-->
+    <!--<div class="right-top">-->
+    <!--<div class='tab-holder'>-->
+    <!--<span class='tab'>Works</span>-->
+    <!--<span class='tab active'>Contact</span>-->
 
 
-            <!--</div>-->
-            <!--&lt;!&ndash; eo tab holder &ndash;&gt;-->
-        <!--</div>-->
-        <!--&lt;!&ndash; eo right-top &ndash;&gt;-->
-        <!--<div class='tab-container'>-->
-            <!--<div class='tab-mask'>-->
-                <!--<div class='tab-detail-holder'>-->
-                    <!--<div class="tab-detail contact">-->
+    <!--</div>-->
+    <!--&lt;!&ndash; eo tab holder &ndash;&gt;-->
+    <!--</div>-->
+    <!--&lt;!&ndash; eo right-top &ndash;&gt;-->
+    <!--<div class='tab-container'>-->
+    <!--<div class='tab-mask'>-->
+    <!--<div class='tab-detail-holder'>-->
+    <!--<div class="tab-detail contact">-->
 
-                        <!--<h1>Contact Us</h1>-->
+    <!--<h1>Contact Us</h1>-->
 
-                        <!--<ul>-->
-                            <!--<form>-->
-                                <!--<li>-->
-                                    <!--<label>Name</label>-->
-                                    <!--<input type='text' placeholder='Name'>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                    <!--<label>Email</label>-->
-                                    <!--<input type='text' placeholder='Email'>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                    <!--<label>Subject</label>-->
-                                    <!--<input type='text'>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                    <!--<label>Message</label>-->
-                                    <!--<textarea>-->
+    <!--<ul>-->
+    <!--<form>-->
+    <!--<li>-->
+    <!--<label>Name</label>-->
+    <!--<input type='text' placeholder='Name'>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<label>Email</label>-->
+    <!--<input type='text' placeholder='Email'>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<label>Subject</label>-->
+    <!--<input type='text'>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<label>Message</label>-->
+    <!--<textarea>-->
 
-                                    <!--</textarea>-->
-                                <!--</li>-->
-                                <!--<li>-->
-                                    <!--<input type='submit' class='btn hyper' value='send'>-->
-                                <!--</li>-->
-                            <!--</form>-->
-                        <!--</ul>-->
+    <!--</textarea>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<input type='submit' class='btn hyper' value='send'>-->
+    <!--</li>-->
+    <!--</form>-->
+    <!--</ul>-->
 
 
-                    <!--</div>-->
-                    <!--&lt;!&ndash; eo tab-detail contact &ndash;&gt;-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; eo tab mask &ndash;&gt;-->
-        <!--</div>-->
-        <!--&lt;!&ndash; eo tab-container &ndash;&gt;-->
+    <!--</div>-->
+    <!--&lt;!&ndash; eo tab-detail contact &ndash;&gt;-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; eo tab mask &ndash;&gt;-->
+    <!--</div>-->
+    <!--&lt;!&ndash; eo tab-container &ndash;&gt;-->
 
     <!--</div>-->
     <!-- eo right -->
