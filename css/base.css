@@ -134,7 +134,8 @@ a {
 }
 
 .testimonials {
-    background: #313131;
+    background: #F4F4F4;
+    color: #444142;
 }
 
 .testimonials a {
@@ -142,7 +143,7 @@ a {
 }
 
 .contact {
-    background: #1b83b3;
+    background: #222222;
 }
 
 .brand {
@@ -293,7 +294,7 @@ a {
     width: 17em;
     text-align: justify;
     /*font-size: small;*/
-    border: 0.5em solid #fff;
+    border: 0.5em solid #444142;
     box-shadow: 1px 1px 2px #e6e6e6;
     float: left;
     padding: 1em;
