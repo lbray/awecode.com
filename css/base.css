@@ -42,6 +42,11 @@ a {
     clear: both;
 }
 
+.centered {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .wrap {
     width: 100%;
     /*max-width: 1600px;*/
@@ -173,9 +178,9 @@ a {
 .view {
     width: 300px;
     height: 200px;
-    margin: 10px;
+    margin: 0.625em;
     float: left;
-    border: 10px solid #fff;
+    border: 0.5em solid #fff;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -282,3 +287,40 @@ a {
     transition-delay: 0.5s;
 }
 
+/*Testimonial boxes*/
+
+.box {
+    width: 17em;
+    text-align: justify;
+    /*font-size: small;*/
+    border: 0.5em solid #fff;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    float: left;
+    padding: 1em;
+    margin: 0.625em;
+}
+
+.box .title {
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+.box .title:before, .box .title:after {
+    content: '"';
+}
+
+.box .client:before {
+    content: "-";
+    padding-top: 1em;
+}
+
+.box .person:after {
+    content: "\a";
+    white-space: pre;
+}
+
+.box .client {
+    padding-top: 1em;
+}
