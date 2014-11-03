@@ -346,6 +346,8 @@ a {
 
 .address-container {
     max-width: 40em;
+    float: left;
+    padding: 2em;
 }
 
 .address {
@@ -359,4 +361,25 @@ a {
     float: left;
     padding: 1em;
     text-align: right;
+}
+
+form.message {
+    padding-top: 2em;
+    float: left;
+    width: 30em;
+}
+
+form.message * {
+    padding: 1em;
+    margin: 2em;
+    display: block;
+    width: 28em;
+}
+
+form.message input[type=submit] {
+    width: 30em;
+}
+
+form.message input:first-child {
+    margin-top: 0;
 }
