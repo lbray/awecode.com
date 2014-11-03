@@ -59,7 +59,7 @@ a {
     position: relative;
     margin: 0 auto;
     padding: 0 0 20px 0;
-    height: 500px;
+    min-height: 500px;
 }
 
 .inner {
@@ -138,19 +138,6 @@ a {
 
 .contact {
     background: #1b83b3;
-}
-
-.s4 {
-    background: #5aa3c4;
-}
-
-.s5 {
-    background: #bce1f1;
-    color: #3d3d3d;
-}
-
-.s6 {
-    background: #161616;
 }
 
 .brand {
