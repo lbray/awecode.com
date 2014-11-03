@@ -341,3 +341,22 @@ a {
 #map-container {
     overflow: hidden;
 }
+
+/*Contact*/
+
+.address-container {
+    max-width: 40em;
+}
+
+.address {
+    width: 18em;
+    float: left;
+    padding: 1em;
+}
+
+.contact-info {
+    width: 18em;
+    float: left;
+    padding: 1em;
+    text-align: right;
+}
