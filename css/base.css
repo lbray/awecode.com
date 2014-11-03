@@ -325,3 +325,19 @@ a {
 .box .client {
     padding-top: 1em;
 }
+
+/*Maps*/
+
+#map-canvas img {
+    max-width: none !important;
+    background: none !important
+}
+
+#map-container, #map-canvas {
+    height: 20em;
+    width: 40em;
+}
+
+#map-container {
+    overflow: hidden;
+}
