@@ -376,3 +376,9 @@ form.message input[type=submit] {
 form.message input:first-child {
     margin-top: 0;
 }
+
+.top {
+    margin: 0 !important;
+    position: fixed !important;
+    top: 0;
+}
