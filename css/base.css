@@ -82,26 +82,22 @@ a {
     clear: both;
 }
 
-.subMenu {
+nav {
     z-index: 1000;
     width: 100%;
-    /*position: fixed !important;*/
     position: fixed;
-    /*z-index: 100; */
     bottom: 0;
     left: 0;
-    /*max-width: 1600px;*/
-    /*margin: 0 !important;*/
 }
 
-.subMenu .inner {
+nav .inner {
     padding: 0;
     font-weight: 400;
     margin: 0 10%;
     background: black;
 }
 
-.subNavBtn {
+nav a {
     display: block;
     width: 21%;
     float: left;
@@ -113,7 +109,7 @@ a {
     color: #fff;
 }
 
-.subMenu a:hover {
+nav a:hover {
     background: #111;
 }
 
