@@ -39,7 +39,7 @@ var watch_scroll = function () {
             $nav.addClass('top');
         }
         // if the navbar is on top but can go back to its place and fit above works section, send it there
-        if ($('.works')[0].getBoundingClientRect().top >= $('nav')[0].getBoundingClientRect().height && $nav.hasClass('top')) {
+        if ($('.works')[0].getBoundingClientRect().top >= $nav[0].getBoundingClientRect().height && $nav.hasClass('top')) {
             $nav.removeClass('top').css('margin', '0');
         }
         if (!isElementInViewport($nav[0])) {
