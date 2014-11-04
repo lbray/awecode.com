@@ -85,7 +85,11 @@ a {
 .subMenu {
     z-index: 1000;
     width: 100%;
-
+    /*position: fixed !important;*/
+    position: fixed;
+    /*z-index: 100; */
+    bottom: 0;
+    left: 0;
     /*max-width: 1600px;*/
     /*margin: 0 !important;*/
 }
@@ -117,40 +121,14 @@ a {
     background: #333;
 }
 
-.end {
-    margin: 0;
-}
-
 /* SECTIONS */
 .brand {
     background: #fff;
     color: #3d3d3d;
-}
-
-.works {
-    background: #222;
-    color: #fff;
-
-}
-
-.testimonials {
-    background: #F4F4F4;
-    color: #444142;
-}
-
-.testimonials a {
-    color: #fff;
-}
-
-.contact {
-    background: #222222;
-}
-
-.brand {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 94%;
     text-align: center;
 }
 
@@ -172,6 +150,25 @@ a {
 
 .brand a {
     text-decoration: none;
+}
+
+.works {
+    background: #222;
+    color: #fff;
+
+}
+
+.testimonials {
+    background: #F4F4F4;
+    color: #444142;
+}
+
+.testimonials a {
+    color: #fff;
+}
+
+.contact {
+    background: #222222;
 }
 
 /*Hover Effects*/
