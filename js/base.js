@@ -1,9 +1,3 @@
-//        $(document).ready(function () {
-//            $('.subMenu').smint({
-//                'scrollSpeed': 1000
-//            });
-//        });
-
 var $document = $(document);
 
 
@@ -18,26 +12,12 @@ function isElementInViewport(el) {
         );
 }
 
-//function callback() {
-//    console.log('hidden');
-//}
-//
-//
-//function fireIfElementVisible(el, callback) {
-//    return function () {
-//        if (!isElementInViewport(el)) {
-//            callback();
-//        }
-//    }
-//}
-
-//var handler = fireIfElementVisible('nav', callback);
-
 
 //$(window).on('DOMContentLoaded load resize scroll', handler);
 
 var watch_scroll = function () {
     var $nav = $('nav');
+    $nav.css('height', $('nav .inner')[0].getBoundingClientRect().height + 'px');
     if ($document.scrollTop() != 0) {
         // move navbar programmatically as we are making it relative
         if ($nav.css('position') == 'fixed') {
@@ -47,12 +27,14 @@ var watch_scroll = function () {
         if (!isElementInViewport($nav[0])) {
             $nav.addClass('top');
         }
-        if (isElementInViewport($('.brand')[0])) {
-            $nav.removeClass('top');
+        // if the navbar can go back to its place and fit above works section, send it there
+        if ($('.works')[0].getBoundingClientRect().top >= $('nav')[0].getBoundingClientRect().height) {
+            $nav.removeClass('top').css('margin', '0');
         }
     } else {
         $nav.css('position', 'fixed');
     }
+
 }
 
 $document.scroll(function () {
