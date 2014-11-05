@@ -30,16 +30,18 @@ var watch_scroll = function () {
     var nav_height = $('nav .inner')[0].getBoundingClientRect().height + 'px';
     $nav.css('height', nav_height);
     if (scroll_top != 0) {
-        // move navbar programmatically as we are making it relative
-        if ($nav.css('position') == 'fixed') {
+
+//        move navbar programmatically as we are making it relative
+        if ($nav.css('position') == 'fixed' && !$nav.hasClass('top')) {
+
             $nav.css('margin-top', '-' + scroll_top + 'px');
             $nav.css('position', 'relative');
         }
         if (!isElementInViewport($nav[0])) {
-            $nav.addClass('top');
+            $nav.addClass('top').css('margin', '0');
         }
-        // if the navbar is on top but can go back to its place and fit above works section, send it there
-        if ($('.works')[0].getBoundingClientRect().top >= $nav[0].getBoundingClientRect().height && $nav.hasClass('top')) {
+//        if the navbar is on top but can go back to its place and fit above works section, send it there
+        if ($('#works')[0].getBoundingClientRect().top >= $nav[0].getBoundingClientRect().height && $nav.hasClass('top')) {
             $nav.removeClass('top').css('margin', '0');
         }
         if (!isElementInViewport($nav[0])) {
@@ -50,6 +52,22 @@ var watch_scroll = function () {
     }
 
 }
+
+//smooth scrolling
+$(function () {
+    $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
 
 $document.scroll(function () {
     watch_scroll();

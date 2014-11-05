@@ -118,7 +118,7 @@ nav a:hover {
 }
 
 /* SECTIONS */
-.brand {
+#home {
     background: #fff;
     color: #3d3d3d;
     height: 100%;
@@ -128,13 +128,13 @@ nav a:hover {
     text-align: center;
 }
 
-.brand h1 {
+#home h1 {
     font-weight: 100;
     text-transform: uppercase;
     color: black;
 }
 
-.brand #intro {
+#home #intro {
     display: block;
     margin-top: 1.2em;
 }
@@ -144,26 +144,26 @@ nav a:hover {
     width: 270px;
 }
 
-.brand a {
+#home a {
     text-decoration: none;
 }
 
-.works {
+#works {
     background: #222;
     color: #fff;
 
 }
 
-.testimonials {
+#testimonials {
     background: #F4F4F4;
     color: #444142;
 }
 
-.testimonials a {
+#testimonials a {
     color: #fff;
 }
 
-.contact {
+#contact {
     background: #222222;
 }
 
