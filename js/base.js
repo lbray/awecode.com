@@ -1,17 +1,5 @@
-var $document = $(document);
-
-var sl = function (o) {
-    if (window.console) {
-        console.log(o);
-    } else {
-        alert(o);
-    }
-}
-
-
 function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
-
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
@@ -20,39 +8,39 @@ function isElementInViewport(el) {
         );
 }
 
-
-//$(window).on('DOMContentLoaded load resize scroll', handler);
-
 var watch_scroll = function () {
     //copying scroll top
     var scroll_top = $document.scrollTop() + 0;
     var $nav = $('nav');
     var nav_height_num = $('nav .inner')[0].getBoundingClientRect().height;
     var nav_height = nav_height_num + 'px';
+    var sections = $('.section');
     $nav.css('height', nav_height);
     if (scroll_top != 0) {
-
 //        move navbar programmatically as we are making it relative
         if ($nav.css('position') == 'fixed' && !$nav.hasClass('top')) {
 
             $nav.css('margin-top', '-' + scroll_top + 'px');
             $nav.css('position', 'relative');
         }
+
         if (!isElementInViewport($nav[0])) {
             $nav.addClass('top').css('margin', '0');
         }
+
 //        if the navbar is on top but can go back to its place and fit above works section, send it there
         if ($('#works')[0].getBoundingClientRect().top >= $nav[0].getBoundingClientRect().height && $nav.hasClass('top')) {
             $nav.removeClass('top').css('margin', '0');
         }
+
         if (!isElementInViewport($nav[0])) {
             $nav.css('position', 'fixed');
         }
+
     } else {
         $nav.css('position', 'fixed');
     }
 
-    var sections = $('.section');
 
     sections.each(function () {
         var top = $(this).offset().top - nav_height_num,
@@ -60,7 +48,6 @@ var watch_scroll = function () {
         if (scroll_top >= top && scroll_top <= bottom) {
             $nav.find('a').removeClass('active');
             sections.removeClass('active');
-
             $(this).addClass('active');
             $nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
         }
@@ -89,6 +76,18 @@ $(function () {
     });
 });
 
+
+var $document = $(document);
 $document.scroll(function () {
     watch_scroll();
+});
+
+$document.ready(function () {
+    function init_map() {
+        var position = new google.maps.LatLng(27.686149, 85.331765);
+        var map = new google.maps.Map(document.getElementById("map-canvas"), {zoom: 16, center: position, mapTypeId: google.maps.MapTypeId.ROADMAP});
+        var marker = new google.maps.Marker({map: map, position: position});
+    }
+
+    google.maps.event.addDomListener(window, 'load', init_map);
 });
