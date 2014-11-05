@@ -27,7 +27,8 @@ var watch_scroll = function () {
     //copying scroll top
     var scroll_top = $document.scrollTop() + 0;
     var $nav = $('nav');
-    var nav_height = $('nav .inner')[0].getBoundingClientRect().height + 'px';
+    var nav_height_num = $('nav .inner')[0].getBoundingClientRect().height;
+    var nav_height = nav_height_num + 'px';
     $nav.css('height', nav_height);
     if (scroll_top != 0) {
 
@@ -50,6 +51,20 @@ var watch_scroll = function () {
     } else {
         $nav.css('position', 'fixed');
     }
+
+    var sections = $('.section');
+
+    sections.each(function () {
+        var top = $(this).offset().top - nav_height_num,
+            bottom = top + $(this).outerHeight();
+        if (scroll_top >= top && scroll_top <= bottom) {
+            $nav.find('a').removeClass('active');
+            sections.removeClass('active');
+
+            $(this).addClass('active');
+            $nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+        }
+    });
 
 }
 
