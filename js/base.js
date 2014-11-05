@@ -66,6 +66,11 @@ var watch_scroll = function () {
         }
     });
 
+    if (isElementInViewport($('#map-canvas')[0])) {
+        $nav.find('a').removeClass('active');
+        sections.removeClass('active');
+        $nav.find('a[href="#contact"]').addClass('active');
+    }
 }
 
 //smooth scrolling
