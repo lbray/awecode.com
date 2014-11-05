@@ -67,6 +67,10 @@ a {
     min-height: 500px;
 }
 
+.section .inner h1 {
+    margin-top: 1em;
+}
+
 .inner {
     margin: 0 auto;
     position: relative;
@@ -94,19 +98,19 @@ nav .inner {
     padding: 0;
     font-weight: 400;
     /*margin: 0 10%;*/
-    background: black;
+    height: 3em;
 }
 
 nav a {
-    display: block;
-    width: 21%;
+    width: 20%;
     float: left;
-    margin: 0;
     text-decoration: none;
     font-size: 1em;
-    padding: 1em 2% 0 2%;
+    padding: 1em 2% 0.8em 2%;
     text-align: center;
     color: #fff;
+    background: black;
+    border-right: 1px solid #333333;
 }
 
 nav a:hover {
@@ -126,6 +130,10 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+#home .inner h1 {
+    margin-top: 1em;
 }
 
 #home h1 {
