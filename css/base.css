@@ -335,8 +335,6 @@ nav a:hover {
 }
 
 #map-container, #map-canvas {
-    /*height: 20em;*/
-    /*width: 40em;*/
     margin: 0;
     padding: 0;
     height: 100%;
