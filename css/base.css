@@ -410,7 +410,8 @@ form.message * {
     padding: 1em;
     margin: 2em;
     display: block;
-    width: 28em;
+    max-width: 28em;
+    width: 100%;
 }
 
 form.message input[type=submit] {
