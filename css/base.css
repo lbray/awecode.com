@@ -52,7 +52,7 @@ a {
     /*max-width: 1600px;*/
     z-index: 10;
     position: relative;
-    margin: 0 auto;
+    /*margin: 0 2em;*/
     padding: 0;
 
 }
@@ -67,7 +67,7 @@ a {
     min-height: 500px;
 }
 
-.section .inner h1 {
+.inner h1 {
     margin: 1em;
 }
 
@@ -78,16 +78,13 @@ a {
     font-size: 18px;
     font-weight: 300;
     max-width: 1600px;
+    text-align: center;
 }
 
 .inner:after {
     content: "";
     display: table;
     clear: both;
-}
-
-.section-content{
-
 }
 
 nav {
@@ -192,13 +189,14 @@ nav a:hover {
     width: 300px;
     height: 241px;
     margin: 0.625em;
-    float: left;
+    float: none;
     border: 0.5em solid #fff;
     overflow: hidden;
     position: relative;
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
+    display: inline-block;
     /*background: #fff url(../images/bgimg.jpg) no-repeat center center*/
 }
 
@@ -308,9 +306,10 @@ nav a:hover {
     /*font-size: small;*/
     border: 0.5em solid #444142;
     box-shadow: 1px 1px 2px #e6e6e6;
-    float: left;
+    /*float: none;*/
     padding: 1em;
     margin: 0.625em;
+    display: inline-block;
 }
 
 .box .title {
@@ -341,7 +340,7 @@ nav a:hover {
 /*Expertise*/
 
 .item {
-    float: left;
+    /*float: left;*/
     padding: 2em;
     display: flex;
     justify-content: center;
@@ -349,6 +348,7 @@ nav a:hover {
     text-align: center;
     height: 6em;
     flex-direction: column;
+    display: inline-block;
 }
 
 .item a {
@@ -426,3 +426,28 @@ form.message input:first-child {
     position: fixed !important;
     top: 0;
 }
+
+.box {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+/*.section-content {*/
+/*display: flex;*/
+/*flex-flow: row wrap;*/
+/*justify-content: flex-start;*/
+/*text-align: center;*/
+/*}*/
+
+@media only screen and (min-width: 1374px) {
+    #works .inner {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1542px) {
+    #testimonials .inner {
+        text-align: left;
+    }
+}
+
