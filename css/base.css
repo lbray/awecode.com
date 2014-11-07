@@ -171,8 +171,14 @@ nav a:hover {
     color: #fff;
 }
 
-#contact {
+#expertise {
     background: #222222;
+    /*color: #444142;*/
+}
+
+#contact {
+    background: #F4F4F4;
+    color: #444142;
 }
 
 /*Hover Effects*/
@@ -325,6 +331,29 @@ nav a:hover {
 
 .box .client {
     padding-top: 1em;
+}
+
+/*Expertise*/
+
+.item {
+    float: left;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 6em;
+    flex-direction: column;
+}
+
+.item a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.item img {
+    height: 4em;
+    padding-bottom: 0.5em;
 }
 
 /*Maps*/
