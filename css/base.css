@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -112,7 +113,6 @@ nav a {
     color: #fff;
     background: black;
     border-right: 1px solid #333333;
-    box-sizing: border-box;
 }
 
 nav a:hover {
@@ -382,9 +382,9 @@ nav a:hover {
 /*Contact*/
 
 .address-container {
-    max-width: 40em;
     float: left;
     padding: 2em;
+    width: 50%;
 }
 
 .address {
@@ -402,22 +402,21 @@ nav a:hover {
 
 form.message {
     padding-top: 2em;
-    float: left;
-    width: 30em;
+    display: inline-block;
+    width: 50%;
 }
 
 form.message * {
     padding: 1em;
-    margin: 2em;
+    margin: 2em 2%;
     display: block;
-    max-width: 28em;
-    width: 100%;
+    width: 96%;
 }
 
-form.message input[type=submit] {
+/*form.message input[type=submit] {
     max-width: 30em;
     width: 100%;
-}
+}*/
 
 form.message input:first-child {
     margin-top: 0;
@@ -460,6 +459,17 @@ form.message input:first-child {
 /*Show menu when invisible checkbox is checked*/
 nav input[type=checkbox]:checked ~ div.inner {
     display: block;
+}
+
+@media screen and (max-width: 1000px) {
+.address-container{
+    width: 100%;
+    }
+
+    form.message{
+        width: 100%;
+
+    }
 }
 
 @media screen and (max-width: 44em) {
