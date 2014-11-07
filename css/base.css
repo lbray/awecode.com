@@ -415,7 +415,8 @@ form.message * {
 }
 
 form.message input[type=submit] {
-    width: 30em;
+    max-width: 30em;
+    width: 100%;
 }
 
 form.message input:first-child {
