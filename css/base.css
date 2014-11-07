@@ -386,14 +386,13 @@ nav a:hover {
 }
 
 .address {
-    width: 18em;
     float: left;
     padding: 1em;
+    text-align: left;
 }
 
 .contact-info {
-    width: 18em;
-    float: left;
+    float: right;
     padding: 1em;
     text-align: right;
 }
