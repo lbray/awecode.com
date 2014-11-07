@@ -496,13 +496,16 @@ nav input[type=checkbox]:checked ~ div.inner {
 
     .show-menu {
         display: block;
-        width: 4em;
-        background: black;
-        color: white;
-        height: 3em;
-        margin: 0 auto;
-        position: fixed;
-        bottom: 0;
+padding: 0.25em 0.25em 0 0.25em;
+background: black;
+/* color: white; */
+/* height: 3em; */
+/* margin: 0 auto; */
+position: fixed;
+bottom: 0;
+opacity: 0.75;
+/* line-height: 2em; */
+font-size: 2em;
     }
 
 }
