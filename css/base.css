@@ -459,6 +459,10 @@ nav input[type=checkbox]:checked ~ div.inner {
     display: block;
 }
 
+nav input[type=checkbox]:checked ~ label {
+    transform: rotate(180deg);
+}
+
 @media screen and (max-width: 1000px) {
     .address-container {
         width: 100%;
