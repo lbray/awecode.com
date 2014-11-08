@@ -535,6 +535,7 @@ nav input[type=checkbox] {
 }
 
 nav label {
+    height: 5%;
     display: none;
     cursor: pointer;
     user-select: none;
