@@ -70,6 +70,7 @@ a {
 
 .inner h1 {
     margin: 1em;
+    text-align: left;
 }
 
 .inner {
@@ -459,11 +460,11 @@ nav input[type=checkbox]:checked ~ div.inner {
 }
 
 @media screen and (max-width: 1000px) {
-.address-container{
-    width: 100%;
+    .address-container {
+        width: 100%;
     }
 
-    form.message{
+    form.message {
         width: 100%;
 
     }
@@ -496,16 +497,19 @@ nav input[type=checkbox]:checked ~ div.inner {
 
     .show-menu {
         display: block;
-padding: 0.25em 0.25em 0 0.25em;
-background: black;
-/* color: white; */
-/* height: 3em; */
-/* margin: 0 auto; */
-position: fixed;
-bottom: 0;
-opacity: 0.75;
-/* line-height: 2em; */
-font-size: 2em;
+        padding: 0.25em 0.25em 0 0.25em;
+        background: black;
+        /* color: white; */
+        /* height: 3em; */
+        /* margin: 0 auto; */
+        position: fixed;
+        bottom: 0;
+        opacity: 0.75;
+        /* line-height: 2em; */
+        font-size: 2em;
+        width: 2.5em;
+        right: 50%;
+        margin-right: -1.25em;
     }
 
 }
@@ -534,4 +538,8 @@ nav label {
     display: none;
     cursor: pointer;
     user-select: none;
+}
+
+.show-menu path {
+    stroke: white;
 }
