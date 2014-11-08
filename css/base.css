@@ -454,10 +454,10 @@ form.message input:first-child {
     display: none;
 }
 
-/*Show menu when invisible checkbox is checked*/
-nav input[type=checkbox]:checked ~ div.inner {
-    display: block;
-}
+/*Move menu to top when invisible checkbox is checked*/
+/*nav input[type=checkbox]:checked ~ div.inner {*/
+/*top: 0;*/
+/*}*/
 
 nav input[type=checkbox]:checked ~ label {
     transform: rotate(180deg);
@@ -480,9 +480,14 @@ nav input[type=checkbox]:checked ~ label {
         width: 100%;
         height: 95%;
         position: fixed;
-        top: 0;
+        bottom: 0;
         left: 0;
         opacity: 0.9;
+        -webkit-animation: movedown 2s linear forwards;
+        -moz-animation: movedown 2s linear forwards;
+        -ms-animation: movedown 2s linear forwards;
+        -o-animation: movedown 2s linear forwards;
+        animation: movedown 2s linear forwards;
     }
 
     nav {
