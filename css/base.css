@@ -399,7 +399,6 @@ nav a:hover {
 }
 
 form.message {
-    padding-top: 2em;
     display: inline-block;
     width: 50%;
 }
@@ -525,6 +524,17 @@ nav input[type=checkbox]:checked ~ label {
         margin-right: -1.25em;
     }
 
+    .contact-info {
+        clear: both;
+        text-align: left;
+        float: left;
+        padding-left: 0;
+    }
+
+    .address {
+        padding-left: 0;
+    }
+
 }
 
 /* Advanced Checkbox Hack */
@@ -556,4 +566,9 @@ nav label {
 
 .show-menu path {
     stroke: white;
+}
+
+form.message h3 {
+    margin: 0.5em 0 0 0;
+    padding-bottom: 0;
 }
