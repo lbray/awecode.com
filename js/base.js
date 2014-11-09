@@ -63,32 +63,16 @@ var watch_scroll = function () {
 $.fn.slideFadeToggle = function (speed, easing, callback) {
     this.css('bottom', '0');
     this.css('top', 'auto');
-    this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, function (el) {
+    this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, function () {
         $(this).css('top', '0');
         $(this).css('bottom', 'auto');
+//        $(this).animate({top: '0', bottom: 'auto'}, 1000);
     });
     return this;
 };
 
 
 //smooth scrolling
-$(function () {
-    $('a[href*=#]:not([href=#])').click(function () {
-        //hide overlay menu
-        $('#show-menu').attr('checked', false);
-//        $(this).slideFadeToggle();
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
 
 
 var $document = $(document);
@@ -99,7 +83,25 @@ $document.scroll(function () {
 $document.ready(function () {
 
     $('nav input[type=checkbox]').change(function () {
-        $('nav .inner').slideFadeToggle();
+        $('nav .small').slideFadeToggle();
+    });
+
+    $(function () {
+        $('a[href*=#]:not([href=#])').click(function () {
+            //hide overlay menu
+            $('#show-menu').attr('checked', false);
+            $('nav .small').slideFadeToggle();
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
 
     function init_map() {
