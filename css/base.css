@@ -336,6 +336,21 @@ nav a:hover {
     padding-top: 1em;
 }
 
+.box .content {
+    height: 7em;
+    /*height: 5em;*/
+    overflow: hidden;
+}
+
+/*.box:hover ~ .box {*/
+
+/*}*/
+
+/*.box:hover {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+
 /*Expertise*/
 
 .item {
@@ -425,11 +440,6 @@ form.message input:first-child {
     top: 0;
 }
 
-.box {
-    max-height: 200px;
-    overflow: hidden;
-}
-
 /*.section-content {*/
 /*display: flex;*/
 /*flex-flow: row wrap;*/
@@ -447,10 +457,6 @@ form.message input:first-child {
     #testimonials .inner {
         text-align: left;
     }
-}
-
-nav .small {
-    display: none;
 }
 
 /*Move menu to top when invisible checkbox is checked*/
@@ -471,6 +477,12 @@ nav input[type=checkbox]:checked ~ label {
     form.message {
         width: 100%;
 
+    }
+}
+
+@media screen and (min-width: 44em) {
+    nav .small {
+        display: none !important;
     }
 }
 
@@ -572,3 +584,4 @@ form.message h3 {
     margin: 0.5em 0 0 0;
     padding-bottom: 0;
 }
+
