@@ -613,3 +613,61 @@ form.message h3 {
     padding-bottom: 0;
 }
 
+#modal {
+    background: white;
+    border: 1px solid #CCC;
+    position: fixed;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -9em 0 0 -25%;
+    /*height: 50%;*/
+    /* Embiggen */
+    transform: scale(1.5); /* prefix me */
+
+    /* Hidden */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dialog-is-open .wrap {
+
+    /* Blur and de-color */
+    -webkit-filter: blur(5px) grayscale(50%);
+
+    /* Recede */
+    -webkit-transform: scale(0.9);
+
+}
+
+.dialog-is-open #modal {
+
+    /* Regular size and visible */
+    /*transform: scale(1); *//* prefix me */
+    opacity: 1;
+
+    /* Clickable */
+    pointer-events: auto;
+    z-index: 1000;
+
+}
+
+.wrap, #modal {
+
+    transition: all 0.4s ease; /* prefix me */
+
+}
+
+#modal .box {
+    width: 100%;
+    height: 100%;
+    color: black;
+    border: none;
+    cursor: auto;
+    box-shadow: none;
+}
+
+#modal .line-clamp {
+    -webkit-line-clamp: inherit;
+    max-height: none;
+}

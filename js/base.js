@@ -71,6 +71,20 @@ $.fn.slideFadeToggle = function (speed, easing, callback) {
     return this;
 };
 
+function onDocumentKeyUp(event) {
+    if (event.keyCode === 27) {
+        $("body").removeClass("dialog-is-open");
+    }
+}
+
+function onDocumentClick(event) {
+    if ($(event.target).closest('.box').length) {
+        return false;
+    }
+    if ($('body').hasClass('dialog-is-open')) {
+        $("body").removeClass("dialog-is-open");
+    }
+}
 
 //smooth scrolling
 
@@ -85,6 +99,19 @@ $document.ready(function () {
     $('nav input[type=checkbox]').change(function () {
         $('nav .small').slideFadeToggle();
     });
+
+    $(".box").on("click", function () {
+        if ($(this).closest('#modal').length) {
+            return false;
+        }
+        var clone = $(this).clone()
+        $('#modal').html(clone);
+        $("body").toggleClass("dialog-is-open");
+        document.addEventListener('keyup', onDocumentKeyUp, false);
+        document.addEventListener('click', onDocumentClick, false);
+
+    });
+
 
     $(function () {
         $('a[href*=#]:not([href=#])').click(function () {
@@ -112,3 +139,4 @@ $document.ready(function () {
 
     google.maps.event.addDomListener(window, 'load', init_map);
 });
+
