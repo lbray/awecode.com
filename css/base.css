@@ -678,3 +678,14 @@ form.message h3 {
 #modal .line-clamp:after {
     display: none;
 }
+
+#modal-body {
+    float: left;
+    width: 94%;
+}
+
+#modal svg {
+    margin: 1%;
+    float: right;
+    cursor: pointer;
+}

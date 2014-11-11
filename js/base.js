@@ -105,7 +105,7 @@ $document.ready(function () {
             return false;
         }
         var clone = $(this).clone()
-        $('#modal').html(clone);
+        $('#modal-body').html(clone);
         $("body").toggleClass("dialog-is-open");
         document.addEventListener('keyup', onDocumentKeyUp, false);
         document.addEventListener('click', onDocumentClick, false);
