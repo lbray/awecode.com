@@ -137,6 +137,10 @@ $document.ready(function () {
         var marker = new google.maps.Marker({map: map, position: position});
     }
 
+    $("img.lazy").lazyload({
+        effect: "fadeIn"
+    });
+
     google.maps.event.addDomListener(window, 'load', init_map);
 });
 
