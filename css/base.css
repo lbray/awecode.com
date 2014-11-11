@@ -492,6 +492,7 @@ nav input[type=checkbox]:checked ~ label {
     }
 
     nav .small {
+        display: none;
         width: 100%;
         height: 95%;
         position: fixed;
