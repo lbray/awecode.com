@@ -576,6 +576,10 @@ nav input[type=checkbox]:checked ~ label {
         padding-left: 0;
     }
 
+    #modal {
+        border: none;
+    }
+
 }
 
 /* Advanced Checkbox Hack */
