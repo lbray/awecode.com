@@ -10,6 +10,7 @@ body {
     color: #e5e5e5;
     font-size: 12px;
     /*background: #bfbfbf;*/
+    /*-webkit-transform: translateZ(0);*/
 }
 
 html, body, .wrap {
@@ -631,13 +632,14 @@ form.message h3 {
 }
 
 .dialog-is-open .wrap {
-
     /* Blur and de-color */
     -webkit-filter: blur(5px) grayscale(50%);
-
-    /* Recede */
-    -webkit-transform: scale(0.9);
-
+    transform: scale(0.9);
+    cursor: pointer;
+    background-color: black;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
 }
 
 .dialog-is-open #modal {
@@ -670,4 +672,9 @@ form.message h3 {
 #modal .line-clamp {
     -webkit-line-clamp: inherit;
     max-height: none;
+    height: auto;
+}
+
+#modal .line-clamp:after {
+    display: none;
 }
