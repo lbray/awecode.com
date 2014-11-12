@@ -16,7 +16,7 @@
 
 </head>
 <body>
-<div class="wrap">
+<div itemscope itemtype="http://schema.org/Organization" class="wrap">
 
 
 <div class="section" id="home">
@@ -30,7 +30,7 @@
             <meta itemprop="url" content="http://awecode.com/">
         </div>
 
-        <div id="intro">
+        <div id="intro" itemprop="description">
             We build awesome applications.
         </div>
     </div>
@@ -69,11 +69,11 @@
     <div class="inner">
         <h1>Works</h1>
 
-        <div class="view view-fourth">
+        <div class="view view-fourth" itemscope itemtype="http://schema.org/Product">
 
-            <img class="lazy" data-original="img/works/training/thumbnail.png">
+            <img itemprop="image" class="lazy" data-original="img/works/training/thumbnail.png">
 
-            <h3>Training Information System</h3>
+            <h3 itemprop="name">Training Information System</h3>
 
 
             <div class="mask">
@@ -84,10 +84,10 @@
             </div>
         </div>
 
-        <div class="view view-fourth">
-            <img class="lazy" data-original="img/works/inventory/thumbnail.png"/>
+        <div class="view view-fourth" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" class="lazy" data-original="img/works/inventory/thumbnail.png"/>
 
-            <h3>Inventory Control System</h3>
+            <h3 itemprop="name">Inventory Control System</h3>
 
             <div class="mask">
                 <a href="#" class="info">
@@ -96,32 +96,10 @@
             </div>
         </div>
 
-        <div class="view view-fourth">
-            <img class="lazy" data-original="img/works/ils/thumbnail.png"/>
+        <div class="view view-fourth" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" class="lazy" data-original="img/works/ils/thumbnail.png"/>
 
-            <h3>Integrated Library System</h3>
-
-            <div class="mask">
-
-                <a href="#" class="info">Read More</a>
-            </div>
-        </div>
-
-        <div class="view view-fourth">
-            <img class="lazy" data-original="img/works/awecounting/thumbnail.png"/>
-
-            <h3>Awecounting</h3>
-
-            <div class="mask">
-                <a href="#" class="info">Read More</a>
-            </div>
-        </div>
-
-        <div class="view view-fourth">
-
-            <img class="lazy" data-original="img/works/bulk_messaging/thumbnail.png"/>
-
-            <h3>Bulk Messaging System</h3>
+            <h3 itemprop="name">Integrated Library System</h3>
 
             <div class="mask">
 
@@ -129,10 +107,32 @@
             </div>
         </div>
 
-        <div class="view view-fourth">
-            <img class="lazy" data-original="img/works/pawcms/thumbnail.png"/>
+        <div class="view view-fourth" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" class="lazy" data-original="img/works/awecounting/thumbnail.png"/>
 
-            <h3>Content Management System</h3>
+            <h3 itemprop="name">Awecounting</h3>
+
+            <div class="mask">
+                <a href="#" class="info">Read More</a>
+            </div>
+        </div>
+
+        <div class="view view-fourth" itemscope itemtype="http://schema.org/Product">
+
+            <img itemprop="image" class="lazy" data-original="img/works/bulk_messaging/thumbnail.png"/>
+
+            <h3 itemprop="name">Bulk Messaging System</h3>
+
+            <div class="mask">
+
+                <a href="#" class="info">Read More</a>
+            </div>
+        </div>
+
+        <div class="view view-fourth" itemscope itemtype="http://schema.org/Product">
+            <img itemprop="image" class="lazy" data-original="img/works/pawcms/thumbnail.png"/>
+
+            <h3 itemprop="name">Content Management System</h3>
 
             <div class="mask">
                 <p>Your Text</p>
@@ -382,9 +382,10 @@
             </div>
 
             <div class="contact-info">
-                Phone: +977 (01) 6200351<br>
-                Email: hi@awecode.com
+                Phone: <span itemprop="telephone" content="+97716200351">+977 (01) 6200351</span><br>
+                Email: <span itemprop="email">info@awecode.com</span>
             </div>
+            <meta itemprop="openingHours" datetime="Mo-Fr 10:00-19:00"/>
         </div>
 
         <!--<div class="message-container">-->
