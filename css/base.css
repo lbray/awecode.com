@@ -562,21 +562,16 @@ form.message h3 {
 }
 
 .dialog-is-open #modal {
-
     /* Regular size and visible */
     /*transform: scale(1); *//* prefix me */
     opacity: 1;
-
     /* Clickable */
     pointer-events: auto;
     z-index: 1000;
-
 }
 
 .wrap, #modal {
-
     transition: all 0.4s ease; /* prefix me */
-
 }
 
 #modal .box {
@@ -613,6 +608,21 @@ form.message h3 {
 #modal-close svg {
     width: 24px;
     height: 100%;
+}
+
+form.message h3 a {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    width: auto;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
 }
 
 @media screen and (max-width: 1000px) {

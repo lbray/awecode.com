@@ -383,17 +383,17 @@
 
             <div class="contact-info">
                 Phone: <span itemprop="telephone" content="+97716200351">+977 (01) 6200351</span><br>
-                Email: <span itemprop="email">info@awecode.com</span><br>
+                Email: <span itemprop="email"><a href="mailto:info@awecode.com">info@awecode.com</a></span><br>
                 <a href="img/qr.svg" target="_blank">QR</a> | <a href="awecode.vcf" target="_blank">vCard</a>
             </div>
             <meta itemprop="openingHours" datetime="Mo-Fr 10:00-19:00"/>
         </div>
 
         <!--<div class="message-container">-->
-        <form class="message" action="//forms.brace.io/you@email.com">
+        <form class="message" method="POST">
             <h3>Say Hello</h3>
             <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="_replyto" placeholder="Email" required>
+            <input type="email" name="email" placeholder="Email" required>
             <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
             <input type="submit" value="Send">
         </form>

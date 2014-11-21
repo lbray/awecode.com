@@ -137,10 +137,41 @@ $document.ready(function () {
         var marker = new google.maps.Marker({map: map, position: position});
     }
 
+    $('form.message').submit(function () {
+        $('input[type="submit"]').val('Sending...');
+        $.ajax({
+            type: "POST",
+            url: "https://mandrillapp.com/api/1.0/messages/send.json",
+            data: {
+                'key': '93ehZRiHBKmp0agdPt-_Cg', //only works from awecode.com
+                'message': {
+                    'from_email': $('input[name="email"]').val(),
+                    'to': [
+                        {
+                            'email': 'xtranophilist@gmail.com',
+                            'type': 'to'
+                        }
+                    ],
+                    'autotext': 'true',
+                    'subject': '[AWECODE] Message from ' + $('input[name="name"]').val(),
+                    'html': $('textarea[name="message"]').val()
+                }
+            }
+        }).done(function (response) {
+            $('form.message h3').html('Thank you! We will get back to you soon.');
+            $('form.message h3').addClass('success');
+            $('input[type="submit"]').val('Send');
+        }).fail(function () {
+            $('form.message h3').html('E-mail sending failed! Please write us at <a href="mailto:info@awecode.com">info@awecode.com</a>');
+            $('form.message h3').addClass('fail');
+            $('input[type="submit"]').val('Send');
+        });
+        return false;
+    });
+
     $("img.lazy").lazyload({
         effect: "fadeIn"
     });
 
     google.maps.event.addDomListener(window, 'load', init_map);
 });
-
