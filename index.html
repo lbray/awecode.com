@@ -390,12 +390,12 @@
         </div>
 
         <!--<div class="message-container">-->
-        <form class="message">
+        <form class="message" action="//forms.brace.io/you@email.com">
             <h3>Say Hello</h3>
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="name" placeholder="Email">
-            <textarea name="message" placeholder="Your Message" rows="6"></textarea>
-            <input type="submit" value="Send Message">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="_replyto" placeholder="Email" required>
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+            <input type="submit" value="Send">
         </form>
         <!--</div>-->
 
