@@ -587,6 +587,7 @@ form.message h3 {
     -webkit-line-clamp: inherit;
     max-height: none;
     height: auto;
+    overflow: inherit;
 }
 
 #modal .line-clamp:after {
